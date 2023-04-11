@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./assignment_2.js"></script>
+</head>
+<body>
+    <div id="content">
+      <p>Existing paragraph 1</p>
+      <p>Existing paragraph 2</p>
+    </div>
+  
+    <script>
+      function addParagraph(text) {
+        const newParagraph = document.createElement("p");
+        const content = document.createTextNode(text);
+        newParagraph.appendChild(content);
+        document.getElementById("content").appendChild(newParagraph);
+      }
+  
+      // Example usage
+      addParagraph("Hello, world!");
+    </script>
+      <ul id="myList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+      </ul>
+    
+      <script>
+        function addListItem(text) {
+          const list = document.getElementById("myList");
+          const newItem = document.createElement("li");
+          const content = document.createTextNode(text);
+          newItem.appendChild(content);
+          list.appendChild(newItem);
+        }
+    
+        // Example usage
+        addListItem("Item 3");
+      </script>
+      
+        <div id="myElement" style="height: 100px; width: 100px; background-color: blue;"></div>
+      
+        <script>
+          function changeBackgroundColor(element, color) {
+            element.style.backgroundColor = color;
+          }
+      
+          // Example usage
+          const myElement = document.getElementById("myElement");
+          changeBackgroundColor(myElement, "red");
+        </script>
+      
+      
+  </body>
+</html>
