@@ -1,4 +1,4 @@
-//1
+//Q1
 function addNumber(num) {
     return function(value) {
       return value + num;
@@ -8,7 +8,7 @@ function addNumber(num) {
 const addFive = addNumber(5);
 console.log(addFive(10)); // Output: 15
 console.log(addFive(20)); // Output: 25
-//2
+//Q2
 function searchArray(arr, value) {
     if (arr.length === 0) {
       return false;
@@ -23,7 +23,7 @@ function searchArray(arr, value) {
   console.log(searchArray(arr, 3)); // Output: true
   console.log(searchArray(arr, 6)); // Output: false
 
-//6
+//Q6
 function saveObject(key, obj) {
     const json = JSON.stringify(obj);
     localStorage.setItem(key, json);
@@ -33,7 +33,7 @@ function saveObject(key, obj) {
   const myObj = {name: "John", age: 30};
   saveObject("myObj", myObj);
 
-//7
+//Q7
 function getObject(key) {
     const json = localStorage.getItem(key);
     return JSON.parse(json);
@@ -43,7 +43,7 @@ function getObject(key) {
   const myObj1 = getObject("myObj");
   console.log(myObj); // Output: {name: "John", age: 30}
   
-  //8
+  //Q8
   function saveObjectProperties(obj) {
     for (const key in obj) {
       const value = obj[key];
