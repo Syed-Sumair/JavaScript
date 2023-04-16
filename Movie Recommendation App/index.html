@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<div class="title-container">
+		<h1 class="title">Movie Recommendation App</h1>
+	</div>
+ 
+	<style>
+	.title-container {
+  	text-align: center;
+	}
+
+	.title {
+  	font-family: Arial, sans-serif;
+  	font-size: 36px;
+  	font-weight: bold;
+	}
+
+		body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Style the form */
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Style the form inputs */
+  form input {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style the form select dropdown */
+  form select {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style the form submit button */
+  form button {
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Style the movie list */
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    padding: 0;
+    list-style: none;
+  }
+  
+  /* Style the individual movie cards */
+  li {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+  }
+  
+  /* Style the movie title */
+  li h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Style the movie image */
+  li img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the movie details */
+  li p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+	</style>
+</head>
+<body>
+
+	<form>
+		<label for="genre">Genre:</label>
+		<select id="genre">
+			<option value="action">Action</option>
+			<option value="comedy">Comedy</option>
+			<option value="drama">Drama</option>
+			<option value="horror">Horror</option>
+		</select>
+		<label for="release-year">Year:</label>
+		<input type="number" id="release-year" min="1900" max="2022">
+		
+		<label for="language">Language:</label>
+ 	 	<select id="language">
+    	<option value="english">English</option>
+    	<option value="spanish">Spanish</option>
+    	<option value="french">French</option>
+  		</select>
+
+		<label for="rating">Rating:</label>
+		<input type="number" id="rating" min="1" max="10">
+		
+		
+		<button type="submit">Submit</button>
+	</form>
+	<div id="recommendations">
+		<!-- Display movie recommendations here using DOM manipulation -->
+	</div>
+
+
+		<div class="movie-list">
+		  <table>
+			<thead>
+			  <tr>
+				<th>Rank</th>
+				<th>Movie</th>
+				<th>Year</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr>
+				<td>1</td>
+				<td>Movie Title</td>
+				<td>2001</td>
+			  </tr>
+			  <tr>
+				<td>2</td>
+				<td>Movie Title</td>
+				<td>2002</td>
+			  </tr>
+			  <tr>
+				<td>3</td>
+				<td>Movie Title</td>
+				<td>2003</td>
+			  </tr>
+			</tbody>
+		  </table>
+		</div>
+	  </div>
+	  
+
+	<script src="app.js"></script>
+</body>
+</html>
